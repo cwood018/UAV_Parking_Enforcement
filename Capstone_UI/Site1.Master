@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs"  Inherits="Capstone_UI.Site1" %>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="Models/Style/style.css"
+</head>
+<body>
+    <form id="form1" runat="server">
+ <div class="navbar">
+  <a href="mainPage.aspx">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">UPD Reports 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="CarsOfParkers.aspx">Cars Of Parkers</a>
+      <a href="CarTicket.aspx" >Car Tickets</a>
+      <a href="TicketsOfUserReport.aspx" >Tickets of Users</a>
+      <a href="TicketTimeReport.aspx" >Ticket Time</a>
+      <a href="UnidentifiedVehicleReport.aspx">Unidentified Vehicle</a>
+      <a href="UnsentTicketsReport.aspx" >Unsent Tickets</a>
+    </div>
+    </div>
+       <div class="dropdown">
+    <button class="dropbtn">Operator Reports 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="SystemAccessReport.aspx">System Access</a>
+      <a href="UserCreationLogReports.aspx">User Creation</a>
+      <a href="UserDeletionReport.aspx">User Deletion</a>
+    </div>
+    </div>
+     <a href="login.aspx">Log Out</a>
+     </div> 
+        <br />
+
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"  >
+            <title>@ViewData["Title"] - WebApplication1</title>
+
+            </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
+ 
+    </form>
+
+</body>
+</html>

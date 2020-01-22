@@ -1,0 +1,428 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Segoe UI", "Segoe", "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    min-width: 500px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+    font-size: 0.9em;
+}
+
+#noScript {
+    margin: 16px;
+    color: Black;
+}
+
+:lang(en-GB) {
+    quotes: '\2018' '\2019' '\201C' '\201D';
+}
+
+:lang(zh) {
+    font-family: 微软雅黑;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+/* Theme layout styles */
+
+#fullPage, #brandingWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+#brandingWrapper {
+    background-color: #4488dd;
+}
+
+#branding {
+    /* A background image will be added to the #branding element at run-time once the illustration image is configured in the theme. 
+       Recommended image dimensions: 1420x1200 pixels, JPG or PNG, 200 kB average, 500 kB maximum. */
+    height: 100%;
+    margin-right: 500px;
+    margin-left: 0px;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#contentWrapper {
+    position: relative;
+    width: 500px;
+    height: 100%;
+    overflow: auto;
+    background-color: #ffffff; /* for IE7 */
+    margin-left: -500px;
+    margin-right: 0px;
+}
+
+#content {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -55px auto;
+    padding: 0px 150px 0px 50px;
+}
+
+#header {
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: "Segoe UI Light", "Segoe", "SegoeUI-Light-final", Tahoma, Helvetica, Arial, sans-serif;
+    padding-top: 90px;
+    margin-bottom: 60px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+    #header img {
+        /* Logo image recommended dimension: 60x60 (square) or 350X35 (elongated), 4 kB average, 10 kB maximum. Transparent PNG strongly recommended. */
+        width: auto;
+        height: auto;
+    }
+
+#workArea, #header {
+    word-wrap: break-word;
+    width: 350px;
+}
+
+#workArea {
+    margin-bottom: 90px;
+}
+
+#footerPlaceholder {
+    height: 40px;
+}
+
+#footer {
+    height: 40px;
+    padding: 10px 50px 0px 50px;
+    position: relative;
+    color: #666666;
+    font-size: 0.78em;
+}
+
+#footerLinks {
+    float: none;
+    padding-top: 10px;
+}
+
+#copyright {
+    color: #696969;
+    display: none;
+}
+
+.pageLink {
+    color: #000000;
+    padding-left: 16px;
+}
+
+/* Common content styles */
+
+.clear {
+    clear: both;
+}
+
+.float {
+    float: left;
+}
+
+.floatReverse {
+    float: right;
+}
+
+.indent {
+    margin-left: 16px;
+}
+
+.indentNonCollapsible {
+    padding-left: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: inherit;
+}
+
+.error {
+    color: #c85305;
+}
+
+.actionLink {
+    margin-bottom: 8px;
+    display: block;
+}
+
+a {
+    color: #2672ec;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+h1, h2, h3, h4, h5, label {
+    margin-bottom: 8px;
+}
+
+.submitMargin {
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
+.topFieldMargin {
+    margin-top: 8px;
+}
+
+.fieldMargin {
+    margin-bottom: 8px;
+}
+
+.groupMargin {
+    margin-bottom: 30px;
+}
+
+.sectionMargin {
+    margin-bottom: 64px;
+}
+
+.block {
+    display: block;
+}
+
+.autoWidth {
+    width: auto;
+}
+
+.fullWidth {
+    width: 342px;
+}
+
+.fullWidthIndent {
+    width: 326px;
+}
+
+input {
+    max-width: 100%;
+    font-family: inherit;
+    margin-bottom: 8px;
+}
+
+    input[type="radio"], input[type="checkbox"] {
+        vertical-align: middle;
+        margin-bottom: 0px;
+    }
+
+    span.submit, input[type="submit"] {
+        border: none;
+        background-color: rgb(38, 114, 236);
+        min-width: 80px;
+        width: auto;
+        height: 30px;
+        padding: 4px 20px 6px 20px;
+        border-style: solid;
+        border-width: 1px;
+        transition: background 0s;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        margin-bottom: 8px;
+        -ms-user-select: none;
+        -moz-transition: background 0s;
+        -webkit-transition: background 0s;
+        -o-transition: background 0s;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+        input[type="submit"]:hover, span.submit:hover {
+            background: rgb(212, 227, 251);
+        }
+
+    input.text {
+        height: 28px;
+        padding: 0px 3px 0px 3px;
+        border: solid 1px #BABABA;
+    }
+
+        input.text:focus {
+            border: 1px solid #6B6B6B;
+        }
+
+select {
+    height: 28px;
+    min-width: 60px;
+    max-width: 100%;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: none;
+    padding: 2px;
+    font-family: inherit;
+}
+
+h1, .giantText {
+    font-size: 2.0em;
+    font-weight: lighter;
+}
+
+h2, .bigText {
+    font-size: 1.33em;
+    font-weight: lighter;
+}
+
+h3, .normalText {
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+h4, .smallText {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+h5, .tinyText {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.hint {
+    color: #999999;
+}
+
+.emphasis {
+    font-weight: 700;
+    color: #2F2F2F;
+}
+
+.smallIcon {
+    height: 20px;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+.largeIcon {
+    height: 48px;
+    /* width:48px; */
+    vertical-align: middle;
+}
+
+.largeTextNoWrap {
+    height: 48px;
+    display: table-cell; /* needed when in float*/
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+.idp {
+    height: 48px;
+    clear: both;
+    padding: 8px;
+    overflow: hidden;
+}
+
+    .idp:hover {
+        background-color: #cccccc;
+    }
+
+.idpDescription {
+    width: 80%;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
